@@ -1,4 +1,10 @@
 <x-guest-layout>
+    <!-- Page Title -->
+    <div class="mb-6 text-center">
+        <h2 class="text-2xl font-bold text-gray-900">Login</h2>
+        <p class="mt-2 text-sm text-gray-600">Sign in to your account</p>
+    </div>
+
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 

@@ -109,9 +109,8 @@ class NoteController extends Controller
     public function adminIndex()
     {
         // Get all notes with user information
-        $notes = Note::with('user')->latest()->paginate(15);
-        
-        return view('admin.notes.index', compact('notes'));
+ $notes = Note::with('user')->latest()->paginate(15);
+ return view('admin.notes.index', compact('notes'));
     }
 
 }
