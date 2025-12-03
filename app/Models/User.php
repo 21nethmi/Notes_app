@@ -55,4 +55,12 @@ class User extends Authenticatable
     {
         return $this->role === 'user';
     }
+
+    public function notes()
+{
+    //each user can have many notes
+    return $this->hasMany(Note::class);
+    
+}
+
 }
